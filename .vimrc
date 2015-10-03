@@ -64,7 +64,8 @@ imap <C-z> <ESC>:u<cr>
 
 
 :syntax enable           "enable colors in vim
-
+filetype plugin indent on
+set encoding=utf-8
 
 :if $TERM == "xterm-256color"
    set t_Co=256
