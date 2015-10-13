@@ -1,4 +1,9 @@
 " my vimrc
+"
+" create local leader and leader keys
+" now pressing "-" and then a key can have a second functionality
+:let mapleader = "-"
+:let maplocalleader = "\\"
 
 "Add newline when hit enter (when not in any modes)
 :nmap <S-Enter> O<Esc>
@@ -114,6 +119,8 @@ else
 endif
 
 set lazyredraw          " redraw only when we need to.
+
+
 
 " turn off search highlight with spacebar
 nnoremap <leader><space> :nohlsearch<CR>
