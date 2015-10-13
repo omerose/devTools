@@ -113,6 +113,11 @@ else
     echo "no cscope"
 endif
 
+set lazyredraw          " redraw only when we need to.
+
+" turn off search highlight with spacebar
+nnoremap <leader><space> :nohlsearch<CR>
+
 
 :command WQ wq
 :command Wq wq
