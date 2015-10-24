@@ -125,6 +125,11 @@ set lazyredraw          " redraw only when we need to.
 " turn off search highlight with spacebar
 nnoremap <leader><space> :nohlsearch<CR>
 
+" enter paste mode by pressing F2, to paste without indents due to auto indent
+set pastetoggle=<F2>
+
+" disable auto-commenting after inserting a new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 :command WQ wq
 :command Wq wq
