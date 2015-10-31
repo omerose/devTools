@@ -124,8 +124,11 @@ set lazyredraw          " redraw only when we need to.
 
 " turn off search highlight with spacebar
 nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>d :call InsertDebugJavascript()<CR>
 
-" enter paste mode by pressing F2, to paste without indents due to auto indent
+" enter paste mode by pressing F2, to paste without indents due to auto indenting
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 " disable auto-commenting after inserting a new line
@@ -154,6 +157,11 @@ function CtoG()
    :%s/\(\d\)\(\d\d\d\n\)/\1,\2\r/g
    :%s/^/X/g
    :%s/,/ Y/g
-
 endfunction
 
+" add debug statements on javascript
+function InsertDebugJavascript()
+   :let lineNum = line(".") + 1
+   :let output = "console.log(\"".lineNum." debugVIM ".strftime("%c")."\");"
+   :exe ":normal o" . output
+endfunction
