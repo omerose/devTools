@@ -161,6 +161,13 @@ endfunction
 " add debug statements on javascript
 function InsertDebugJavascript()
    :let lineNum = line(".") + 1
+   :let output = "console.log(\"dV: ".expand('%:t').":".lineNum."\");"
+   :exe ":normal o" . output
+endfunction
+
+" add debug statements on javascript
+function InsertDebugJavascriptLong()
+   :let lineNum = line(".") + 1
    :let output = "console.log(\"debugVIM: ".expand('%:p').":".lineNum." ".strftime("%c")."\");"
    :exe ":normal o" . output
 endfunction
