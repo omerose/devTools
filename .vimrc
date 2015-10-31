@@ -126,10 +126,9 @@ set lazyredraw          " redraw only when we need to.
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>d :call InsertDebugJavascript()<CR>
 
-" enter paste mode by pressing F2, to paste without indents due to auto indenting
-nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-O>:set invpaste paste?<CR>
-set pastetoggle=<F2>
+" enter paste mode by pressing leaderkey p, to paste without indents due to auto indenting
+nnoremap <leader>p :set invpaste paste?<CR>
+imap <leader>p <C-O>:set invpaste paste?<CR>
 
 " disable auto-commenting after inserting a new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
