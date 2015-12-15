@@ -7,6 +7,9 @@ apt-get update  # To get the latest package lists
 # git version control
 apt-get install git -y
 
+# launching icons not always gives focus, temp fix
+dconf write /org/compiz/profiles/unity/plugins/core/focus-prevention-level 0
+
 # vlc media player
 apt-get install vlc-nox -y
 
@@ -27,13 +30,13 @@ cd -
 cd ~/puush/puush-linux/src
 cp config.py.dist config.py
 cd -
-remindVar="$remindVar\n puush: setup API in PUUSH file inside ~/puush/puush-linux/src/PUUSH, chmod permission on PUUSH, and create shortcut 'in Ubuntu it's system settings > keyboard > keyboard shortcuts > custom shortcuts'"
+remindVar="$remindVar\n puush: setup API in PUUSH file inside ~/puush/puush-linux/PUUSH, chmod permission on PUUSH, and create shortcut for 'puush -b to $ and puush -d U' in compiz keboard config"
 
 # gdm, display manager works well with GNOME, allows to set default gnome as GUI shell
 apt-get install gdm -y
-remindVar="$remindVar\n gdm: run command 'sudo dpkg-reconfigure gdm' and select gnome as default"
+remindVar="$remindVar\n gdm: run command 'sudo dpkg-reconfigure gdm' and select gnome as default after installing gnome"
 
-# htop 
+# htop, monitoring tool for system resources, useful for servers and desktop
 apt-get install htop -y
 
 # un-rar files
@@ -67,12 +70,12 @@ apt-get install vim
 remindVar="$remindVar\n open vim and type :PluginInstall to install the bundles"
 
 # nodejs, npm, and then link them to bin. Used to develop node apps
-apt-get install nodejs
-apt-get install npm
+apt-get install nodejs -y
+apt-get install npm -y
 ln -s /usr/bin/nodejs /usr/bin/node
 
 # reminders for actions to take after install script is done
-remindVar="$remindVar\n setup launcher-panel: notepad++, chrome, cmd, gitter"
+remindVar="$remindVar\n setup launcher-panel: notepad++, chrome, cmd/terminal, devtool (webstorm), filesystem, gitter, anki, other "
 
 remindVar="$remindVar\n google chrome, login for extensions"
 
@@ -87,7 +90,7 @@ remindVar="$remindVar\n get webstorm (see this shellscript file for instruction 
 # get anki, powerful memorization software
 remindVar="$remindVar\n download and install anki"
 
-remindVar="$remindVar\n setup terminal default colors, maybe GNOME does this by default"
+remindVar="$remindVar\n setup terminal default colors, maybe GNOME does this by default, bash can also fix this"
 
 
 # install JDK for webstorm to work
