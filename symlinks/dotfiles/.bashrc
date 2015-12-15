@@ -75,9 +75,9 @@ function mkdir
 }
 
 #Don't let Ctrl S screw you over
-stty ixany
-stty ixoff -ixon
-stty stop undef
-stty start undef
+##  stty ixany
+##  stty ixoff -ixon
+##  stty stop undef
+##  stty start undef
 
 

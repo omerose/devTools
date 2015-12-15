@@ -5,15 +5,19 @@ remindVar="reminders:"
 apt-get update  # To get the latest package lists
 
 # git version control
-apt-get install git
+apt-get install git -y
+
+# vlc media player
+apt-get install vlc-nox -y
+
+# compiz config, allows moving windows from screen to screen with "super key" + z
+apt-get install compizconfig-settings-manager -y
+apt-get update && sudo apt-get install compiz-plugins -y
+remindVar="$remindVar\n launch compiz, and got to themes or modify put key"
 
 # GNOME, GUI for 
-apt-get install gnome-session-fallback -y
-remindVar="$remindVar\n gnome: install a theme. I use XGnome enhanced, remember to set gnome as default when you login"
-
-# gyazo, create and send GIFs quickly
-curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
-apt-get install gyazo -y
+apt-get install ubuntu-gnome-desktop -y
+remindVar="$remindVar\n gnome: log-out and back in, install a theme. or see compiz to change to dark theme"
 
 # puush, create and send screenshots quickly, install xclip dependency
 apt-get install xclip -y
@@ -33,11 +37,12 @@ remindVar="$remindVar\n gdm: run command 'sudo dpkg-reconfigure gdm' and select 
 apt-get install htop -y
 
 # un-rar files
-apt-get install unrar
+apt-get install unrar -y
 
 # redshift (alternative to flux), turns screen to reddish at night (eases strain on eyes)
-apt-get install redshift redshift-gtk -y
-nohup gtk-redshift -l 43:-79 # setup for toronto, autorun in background using nohup, for new lat:long http://itouchmap.com/latlong.html
+#apt-get install redshift redshift-gtk -y
+# disable for now
+#gtk-redshift -l 43:-79 & # setup for toronto, autorun in background using nohup, for new lat:long http://itouchmap.com/latlong.html
 remindVar="$remindVar\n click redshift and add autostart functionality"
 
 # notepad++, text editor for notes (good autosave on crash feature)
@@ -50,15 +55,16 @@ apt-get install tmux -y
 
 # gitter messaging up for developers, allows you to copy-paste code with syntax highlighting
 remindVar="$remindVar\n gitter for messaging"
-#apt-add-repository ppa:gurqn/systray-trusty -y
-#apt-get update
-#apt-get upgrade
+
+# anki, memorization cards
+remindVar="$remindVar\n install anki for memorization"
 
 # gimp, paint/photoshop for ubuntu
 apt-get gimp
 
 # vim file editor
 apt-get install vim
+remindVar="$remindVar\n open vim and type :PluginInstall to install the bundles"
 
 # nodejs, npm, and then link them to bin. Used to develop node apps
 apt-get install nodejs

@@ -7,7 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # setup hotkey for puush
-alias puush="~/puush/puush-linux/src/puush-area.py"
+alias puush="~/puush/puush-linux/puush"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
