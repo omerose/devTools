@@ -65,8 +65,8 @@ remindVar="$remindVar\n install anki for memorization"
 # gimp, paint/photoshop for ubuntu
 apt-get gimp
 
-# vim file editor
-apt-get install vim
+# vim file editor, grabbing gnome version that is has xterm (for copy paste functionality)_and auto-completion plugin works
+apt-get install vim-gnome
 remindVar="$remindVar\n open vim and type :PluginInstall to install the bundles"
 
 # nodejs, npm, and then link them to bin. Used to develop node apps
