@@ -6,6 +6,8 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias serve="python -m SimpleHTTPServer 8000"
+
 # setup hotkey for puush
 alias puush="~/puush/puush-linux/puush"
 

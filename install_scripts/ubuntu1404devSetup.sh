@@ -71,6 +71,7 @@ remindVar="$remindVar\n open vim and type :PluginInstall to install the bundles"
 
 # nodejs, npm, and then link them to bin. Used to develop node apps
 apt-get install nodejs -y
+remindVar="$remindVar\n node may be old, try downloading from node website, at least v5.2 at this moment 2015-dec-16"
 apt-get install npm -y
 ln -s /usr/bin/nodejs /usr/bin/node
 
