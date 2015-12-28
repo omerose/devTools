@@ -192,8 +192,9 @@ endif
 :let maplocalleader = "\\"
 
 "Add newline when hit enter (when not in any modes)
-:nmap <S-Enter> O<Esc>
-:nmap <CR> o<Esc>
+":nmap <S-Enter> O<Esc>
+":nmap <CR> o<Esc>
+
 "Refresh the file to see updates of another application made changes
 :map <F5>  :edit!<CR>
 
