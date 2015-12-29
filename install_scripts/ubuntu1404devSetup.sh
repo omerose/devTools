@@ -13,6 +13,11 @@ dconf write /org/compiz/profiles/unity/plugins/core/focus-prevention-level 0
 # vlc media player
 apt-get install vlc-nox -y
 
+# GIF creator
+add-apt-repository ppa:fossfreedom/byzanz
+apt-get update
+apt-get install byzanz
+
 # compiz config, allows moving windows from screen to screen with "super key" + z
 apt-get install compizconfig-settings-manager -y
 apt-get update && sudo apt-get install compiz-plugins -y
