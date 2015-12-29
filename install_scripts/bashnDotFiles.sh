@@ -15,6 +15,7 @@ ln -s ~/devTools/symlinks/dotfiles/.ideavimrc ~
 ln -s ~/devTools/symlinks/dotfiles/.tmux.conf ~
 ln -s ~/devTools/symlinks/dotfiles/.vimrc ~
 ln -s ~/devTools/symlinks/dotfiles/.vimrc.bundles ~
+ln -s ~/devTools/symlinks/dotfiles/.gitconfig ~
 
 
 bash
