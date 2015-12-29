@@ -17,6 +17,7 @@ apt-get install vlc-nox -y
 add-apt-repository ppa:fossfreedom/byzanz
 apt-get update
 apt-get install byzanz
+mkdir ~/.gifs #directory for gifs storage
 
 # compiz config, allows moving windows from screen to screen with "super key" + z
 apt-get install compizconfig-settings-manager -y
