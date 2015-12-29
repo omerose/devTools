@@ -11,6 +11,9 @@ alias serve="python -m SimpleHTTPServer 8000"
 # setup hotkey for puush
 alias puush="~/puush/puush-linux/puush"
 
+# hotkey for auto gif creation
+alias gif="~/.createGif.sh"
+
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
@@ -25,6 +28,7 @@ alias t="tmux"
 
 # webstorm alias
 alias webstorm="webstorm.sh &"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
