@@ -62,8 +62,8 @@ apt-get install notepadqq -y
 # tmux, splitting terminal horizontally/vertically
 apt-get install tmux -y
 
-# gitter messaging up for developers, allows you to copy-paste code with syntax highlighting
-remindVar="$remindVar\n gitter for messaging"
+# add slack
+remindVar="$remindVar\n slack for messaging"
 
 # anki, memorization cards
 remindVar="$remindVar\n install anki for memorization"
