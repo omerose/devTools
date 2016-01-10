@@ -1,11 +1,17 @@
 #!/bin/sh
 
+# this file installs a bunch of useful stuff on ubuntu 14.04
+# to install run from your "~" directory "sudo <location of this file>"
+
 # variable used to store actions to take after install script is done
 remindVar="reminders:"
 apt-get update  # To get the latest package lists
 
 # git version control
 apt-get install git -y
+
+# download sites for offline viewing
+apt-get install httrack
 
 # launching icons not always gives focus, temp fix
 dconf write /org/compiz/profiles/unity/plugins/core/focus-prevention-level 0

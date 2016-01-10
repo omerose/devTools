@@ -18,7 +18,7 @@ alias puush="~/puush/puush-linux/puush"
 alias gif="~/.createGif.sh"
 
 # make a site available offline on current directory
-alias downloadSite="wget -mkEpnp"
+alias downloadSite="httrack"
 
 
 # Shortcuts
