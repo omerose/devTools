@@ -1,6 +1,7 @@
 #!/bin/sh 
 
 # create directories for vim
+mkdir ~/.vim
 mkdir ~/.vim/backup
 mkdir ~/.vim/swp
 mkdir ~/.vim/undo
