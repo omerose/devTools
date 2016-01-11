@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# open file explorer on current directory, replicate windows "here" command
+alias here="nautilus . &"
+
 alias serve="python -m SimpleHTTPServer 8000"
 
 # setup hotkey for puush
@@ -13,6 +16,10 @@ alias puush="~/puush/puush-linux/puush"
 
 # hotkey for auto gif creation
 alias gif="~/.createGif.sh"
+
+# make a site available offline on current directory
+alias downloadSite="httrack"
+
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
