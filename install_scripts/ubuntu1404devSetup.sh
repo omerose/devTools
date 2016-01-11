@@ -19,6 +19,11 @@ apt-get update
 apt-get install byzanz
 mkdir ~/.gifs #directory for gifs storage
 
+# snipping tool
+add-apt-repository ppa:shutter/ppa
+apt-get update
+apt-get install shutter
+
 # compiz config, allows moving windows from screen to screen with "super key" + z
 apt-get install compizconfig-settings-manager -y
 apt-get update && sudo apt-get install compiz-plugins -y
