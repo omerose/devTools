@@ -74,6 +74,9 @@ function mkdir
    command mkdir $1 && cd $1 
 }
 
+# allow git branch name completion in commandline
+source /etc/bash_completion.d/git
+
 #Don't let Ctrl S screw you over
 ##  stty ixany
 ##  stty ixoff -ixon
