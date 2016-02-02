@@ -20,6 +20,8 @@ alias gif="~/.createGif.sh"
 # make a site available offline on current directory
 alias downloadSite="httrack"
 
+# use 'git mergenoff branch' instead of 'git merge --no-ff branch'
+alias mergenoff="merge --no-ff"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
