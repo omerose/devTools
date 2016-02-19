@@ -358,3 +358,7 @@ function InsertDebugJavascriptLong()
    :let output = "console.log(\"debugVIM: ".expand('%:p').":".lineNum." ".strftime("%c")."\");"
    :exe ":normal o" . output
 endfunction
+
+" neocomplete Pmenu background color was magenta and text not visible, this
+" changes it to a visible color
+highlight Pmenu ctermbg=15
