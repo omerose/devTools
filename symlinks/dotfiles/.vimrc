@@ -361,4 +361,4 @@ endfunction
 
 " neocomplete Pmenu background color was magenta and text not visible, this
 " changes it to a visible color
-highlight Pmenu ctermbg=15
+highlight Pmenu ctermbg=2
