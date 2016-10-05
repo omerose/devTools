@@ -1,5 +1,8 @@
 " Dylan Vann's vimrc. modified with 1dose vimrc
 
+" remap jj to escape
+inoremap jj <Esc>
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)

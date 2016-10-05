@@ -27,6 +27,9 @@ PS1="$GRAY[$RED\u$L_GREEN@$BROWN\h$GRAY $L_CYAN\w$GRAY]$L_GREEN:~>$NO_COLOUR "
 
 }
 
+# disable capslog
+/usr/bin/setxkbmap -option "caps:swapescape"
+
 elite_prompt
 
 # add bin to path
@@ -85,3 +88,6 @@ source /etc/bash_completion.d/git
 
 
 export NODE_PATH=:/usr/local/lib/node_modules
+
+export NVM_DIR="/home/omer/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
