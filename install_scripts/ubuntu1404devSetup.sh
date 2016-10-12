@@ -7,6 +7,9 @@
 remindVar="reminders:"
 apt-get update  # To get the latest package lists
 
+# install trash-cli to allow rebind of rm
+sudo apt-get install trash-cli
+
 # git version control
 apt-get install git -y
 

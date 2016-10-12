@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# removing unsafe rm (use trash instead)
+alias rm='echo "rm is disabled, use trash or /bin/rm instead."'
+
 # open file explorer on current directory, replicate windows "here" command
 alias here="nautilus . &"
 

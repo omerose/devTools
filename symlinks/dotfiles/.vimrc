@@ -1,7 +1,10 @@
 " Dylan Vann's vimrc. modified with 1dose vimrc
 
-" remap jj to escape
-inoremap jj <Esc>
+" launch NERDTree with ctrl + n
+map <C-n> :NERDTreeToggle<CR>
+
+" remap jk to escape
+inoremap jk <Esc>
 
 " Make Vim more useful
 set nocompatible
