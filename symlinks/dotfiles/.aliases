@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# pretty JSON viewing from linux terminal
+alias prettyjson='python -m json.tool'
+
 # removing unsafe rm (use trash instead)
 alias rm='echo "rm is disabled, use trash or /bin/rm instead."'
 
