@@ -1,11 +1,11 @@
-# add name, email, and under core: MyUsername
+# before using this file modify name and email under [user]
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
 [user]
-	name = name lastname
-	email = emailtouse@email.com
+	name = firstname lastname
+	email = emailaddress@email.com
 [alias]
 	co = checkout
 	br = branch
@@ -15,5 +15,8 @@
 	permission-reset = !git diff -p -R | grep -E \"^(diff|(old|new) mode)\" | git apply
 	reset-to-remote = "! git clean -d -f && git fetch origin && git checkout master && git reset --hard origin/master"
 [core]
-	excludesfile = /Users/MyUsername/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vim
+	autocrlf = input
+[commit]
+	template = ~/.gitmessage.txt
