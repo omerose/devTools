@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# reset wifi router, helps when wifi network isnt found
+alias resetwifi='sudo /etc/init.d/network-manager restart'
+
 # pretty JSON viewing from linux terminal
 alias prettyjson='python -m json.tool'
 

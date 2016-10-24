@@ -27,9 +27,6 @@ PS1="$GRAY[$RED\u$L_GREEN@$BROWN\h$GRAY $L_CYAN\w$GRAY]$L_GREEN:~>$NO_COLOUR "
 
 }
 
-# disable capslog
-/usr/bin/setxkbmap -option "caps:swapescape"
-
 elite_prompt
 
 # add bin to path
