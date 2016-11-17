@@ -102,6 +102,8 @@ remindVar="$remindVar\n google chrome, login for extensions"
 
 remindVar="$remindVar\n check if python is installed (was pre-installed on ubuntu 14.4)"
 
+remindVar="$remindVar\n get https://github.com/jerem/psdparse and install using \"sudo python setup.py install\""
+
 # password management system
 remindVar="$remindVar\n install lastpass"
 
