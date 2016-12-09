@@ -1,9 +1,9 @@
 function elite_prompt 
 {
 
+/
 # Standard  bash Colours ::
 
-local BLACK="\[\033[0;30m\]"
 local RED="\[\033[0;31m\]"
 local GREEN="\[\033[0;32m\]"
 local BROWN="\[\033[0;33m\]"
