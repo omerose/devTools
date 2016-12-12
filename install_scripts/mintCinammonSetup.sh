@@ -99,6 +99,7 @@ remindVar="$remindVar\n Rebind inter-monitor left and right to alt+super L and R
 remindVar="$remindVar\n Disable middle click to close window inside 'right click on taskbar and configure windows'"
 remindVar="$remindVar\n Switch all fonts to monospace, and antialiasing to grayscale or else titles won't display properly"
 remindVar="$remindVar\n shortcut to terminal super 3, super 2 browser, super 1 notepad"
+remindVar="$remindVar\n go into bash file and fix bash completion script"
 remindVar="$remindVar\n Check if when battery is critical, laptop goes to hibernate, this was not on by default, also option was missing from power menu. Read this post, has commands to view your current settings, and set them to an appropriate level https://github.com/linuxmint/Cinnamon/issues/4367"
 
 

@@ -74,8 +74,9 @@ function mkdir
    command mkdir $1 && cd $1 
 }
 
-# allow git branch name completion in commandline
-source /etc/bash_completion.d/git
+# download this file: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+# store it in location below to get git branch name completion in commandline
+source ~/git-completion.bash
 
 #Don't let Ctrl S screw you over
 ##  stty ixany
