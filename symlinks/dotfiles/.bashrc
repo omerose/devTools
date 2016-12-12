@@ -1,7 +1,6 @@
 function elite_prompt 
 {
 
-/
 # Standard  bash Colours ::
 
 local RED="\[\033[0;31m\]"
