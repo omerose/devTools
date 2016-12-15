@@ -71,14 +71,27 @@ apt-get install vim-gnome
 apt-get install vim-nox
 remindVar="$remindVar\n open vim and type :PluginInstall to install the bundles"
 
-# node version manager (nvm), npm, and then link them to bin. Used to develop node apps
+# node version manager (nvm), npm. Used to develop node apps. Also setting node to version using at the moment 6.7.0
 remindVar="$remindVar\n Use nvm, test it's working. Currently using version 6.7.0 in projects"
 apt-get install npm -y
+
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install node
 nvm install 6.7.0
+
+
+# Installing yarn, faster version of npm to install packages
+#ORIGINAL COMMAND: I removed sudo, let's see if this works still
+#curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+#echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+apt-get update && apt-get install yarn -y
+
+
+
 
 # reminders for actions to take after install script is done
 remindVar="$remindVar\n setup launcher-panel: notepad++, chrome, cmd/terminal, devtool (webstorm), filesystem, gitter, anki, other "
