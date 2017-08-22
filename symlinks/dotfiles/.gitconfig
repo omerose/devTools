@@ -14,6 +14,7 @@
    undo = "! f() { git clean -df && git checkout -- . }; f"
    permission-reset = !git diff -p -R | grep -E \"^(diff|(old|new) mode)\" | git apply
    reset-to-remote = "! git clean -d -f && git fetch origin && git checkout master && git reset --hard origin/master"
+   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
    excludesfile = ~/.gitignore_global
    editor = vim

@@ -1,22 +1,6 @@
 " Dylan Vann's vimrc. modified with 1dose vimrc
 
-" Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
-" launch NERDTree with ctrl + n
-map <C-n> :NERDTreeToggle<CR>
-
-" remap jk to escape
-inoremap jk <Esc>
+let g:javascript_plugin_flow = 1
 
 " Make Vim more useful
 set nocompatible
@@ -168,6 +152,10 @@ filetype plugin indent on
 
 let g:indentLine_color_term = 239
 
+" grab eslint config from the local project
+let g:syntastic_javascript_eslint_exe ='$(npm bin)/eslint'
+let g:syntastic_javascript_checkers=['eslint']
+
 " Speed up scrolling.
 set ttyfast
 
@@ -238,8 +226,6 @@ endif
 ":set tw=78               "always limit the width of text to 78
 :set bs=2                "allow backspacing over everything in 'insert' mode
 :set et                  "expand tabs to spaces.
-:set shiftwidth=3        "for >> indenting
-:set tabstop=3           "the amount of space a tab moves
 :set scrolloff=3         "set to have some lines visible around the line you are working on at all times
 
 ":set nu                  "show line number in front of every line  (without underlines)

@@ -6,6 +6,10 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# add alias for locally installed vim that is higher version than default vim.
+# allows neovim to work without downloading lua support separately
+alias vim='/usr/local/bin/vim'
+
 # reset wifi router, helps when wifi network isnt found
 alias resetwifi='sudo /etc/init.d/network-manager restart'
 
