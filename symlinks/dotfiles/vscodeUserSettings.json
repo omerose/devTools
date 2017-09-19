@@ -1,0 +1,53 @@
+{
+    // general
+    "editor.snippetSuggestions": "top",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.cursorStyle": "line",
+    "workbench.activityBar.visible": false,
+
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+
+    "javascript.validate.enable": false,
+    "workbench.editor.showIcons": false,
+    "workbench.editor.enablePreview": false,
+
+    // zenmode
+    "zenMode.fullScreen": true,
+    "zenMode.restore": true,
+
+    // theme
+    "workbench.colorTheme": "Default High Contrast",
+
+    // vim
+    "vim.leader": "-",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#FFFFFF",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "rgba(255, 0, 0, 1)",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["leader", " "],
+            "after": [],
+            "commands": [
+                {
+                    "command": ":nohl",
+                    "args": []
+                }
+            ]
+        }
+    ],
+
+
+    // cancels welcome screen
+    "workbench.startupEditor": "newUntitledFile"
+}

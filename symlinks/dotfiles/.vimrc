@@ -1,7 +1,5 @@
 " Dylan Vann's vimrc. modified with 1dose vimrc
 
-let g:javascript_plugin_flow = 1
-
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
