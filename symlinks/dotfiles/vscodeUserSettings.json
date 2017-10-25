@@ -23,8 +23,8 @@
 
     // vim
     "vim.leader": "-",
-    "vim.easymotion": true,
-    "vim.easymotionMarkerBackgroundColor": "#FFFFFF",
+    // "vim.easymotion": true,
+    // "vim.easymotionMarkerBackgroundColor": "#FFFFFF",
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.hlsearch": true,
     "vim.searchHighlightColor": "rgba(255, 0, 0, 1)",
@@ -49,5 +49,8 @@
 
 
     // cancels welcome screen
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "vim.substituteGlobalFlag": true
+    // "vim.easymotionMarkerFontWeight": "normal",
+    // "vim.easymotionMarkerFontSize": "14"
 }

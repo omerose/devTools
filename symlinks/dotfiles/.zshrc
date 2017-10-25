@@ -4,6 +4,10 @@
 # get rid of long name in path if on your own machine
 DEFAULT_USER=`whoami`
 
+# Android development env variables
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -90,7 +94,11 @@ source $ZSH/oh-my-zsh.sh
 alias c='clear'
 alias sl='ls'
 alias here='open .'
-alias dl='youtube-dl --audio-format best'
+alias dl='youtube-dl -f bestaudio'
+alias s='meteor npm run start'
+alias sd='meteor npm run start:development'
 
 # setup git completion script
 source ~/.git-completion.bash
+
+eval $(thefuck --alias)
