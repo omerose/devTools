@@ -18,9 +18,6 @@
     "zenMode.fullScreen": true,
     "zenMode.restore": true,
 
-    // theme
-    "workbench.colorTheme": "Default High Contrast",
-
     // vim
     "vim.leader": "-",
     // "vim.easymotion": true,

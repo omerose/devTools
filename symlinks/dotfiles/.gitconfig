@@ -1,11 +1,12 @@
 # before using this file modify name and email under [user]
 [filter "lfs"]
-   clean = git-lfs clean %f
-   smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
    required = true
+	process = git-lfs filter-process
 [user]
-   name = firstname lastname
-   email = emailaddress@email.com
+   name = firstname
+   email = email@email.com
 [alias]
    co = checkout
    br = branch

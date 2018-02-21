@@ -96,7 +96,14 @@ alias sl='ls'
 alias here='open .'
 alias dl='youtube-dl -f bestaudio'
 alias s='meteor npm run start'
-alias sd='meteor npm run start:development'
+alias sd='meteor npm run start:app:local'
+alias sdd='meteor npm run start:back-office:local'
+alias st='meteor npm run unit'
+alias mr='meteor npm run'
+
+# removing unsafe rm (use trash instead)
+alias rm='echo "rm is disabled, use trash or /bin/rm instead."'
+
 
 # setup git completion script
 source ~/.git-completion.bash
