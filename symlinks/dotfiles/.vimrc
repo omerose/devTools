@@ -21,6 +21,9 @@ set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
 
+" presistent undo even when you close file
+set undofile
+
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
@@ -204,6 +207,28 @@ endif
 "Refresh the file to see updates of another application made changes
 :map <F5>  :edit!<CR>
 
+" Instead of stumbling into ex mode, repeat the last macro used.
+" remaps Q to repeat macro
+nnoremap Q @@
+
+" These are to cancel the default behavior of d, D, c, C
+" to put the text they delete in the default register.
+" Note that this means e.g. "ad won't copy the text into
+" register a anymore.  You have to explicitly yank it.
+" How it works, it remaps the keys to use the register "a instead of default register
+"nnoremap d "ad  " I'm not remaping this because the 'dd' functionality is too familiar and good to move lines
+"vnoremap d "ad  " same as above
+"nnoremap D "aD
+"vnoremap D "aD
+"nnoremap c "ac
+"vnoremap c "ac
+"nnoremap C "aC
+"vnoremap C "aC
+" solves similar to above but in visual mode
+" This makes it so pasting over something doesn't overwrite the default register
+xnoremap p "_dp
+xnoremap P "_dP
+
 "Map the numpad keys
 :inoremap <Esc>Oq 1
 :inoremap <Esc>Or 2
@@ -228,7 +253,7 @@ endif
 
 ":set nu                  "show line number in front of every line  (without underlines)
 ":set number              "show line number in front of every line
-:set autoindent          "automatically indents for you 
+:set autoindent          "automatically indents for you
 :set cindent             "auto indents closing bracket/brace/parenth
 :set showmatch           "Show matching bracets when text indicator is over them
 

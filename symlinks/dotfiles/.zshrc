@@ -5,6 +5,7 @@
 DEFAULT_USER=`whoami`
 
 # Android development env variables
+export REACT_EDITOR=code
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
@@ -95,14 +96,20 @@ alias c='clear'
 alias sl='ls'
 alias here='open .'
 alias dl='youtube-dl -f bestaudio'
-alias s='meteor npm run start'
-alias sd='meteor npm run start:app:local'
-alias sdd='meteor npm run start:back-office:local'
-alias st='meteor npm run unit'
-alias mr='meteor npm run'
+alias s='yarn start'
+alias devTools='open "rndebugger://set-debugger-loc?host=localhost&port=8081"'
 
 # removing unsafe rm (use trash instead)
 alias rm='echo "rm is disabled, use trash or /bin/rm instead."'
+
+# simple python server
+alias serve="python -m SimpleHTTPServer 8000"
+
+# blue tooth reset on MacOSx High Sierra
+# make sure blueutil installed 'brew install blueutil'
+alias resetBlueTooth="blueutil -p 0 && sleep 1 && blueutil -p 1"
+
+alias gpff="gp --no-verify --force"
 
 
 # setup git completion script
