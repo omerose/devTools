@@ -1,1 +1,25 @@
 *~
+
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+
+# test files
+*.out
+
+# General
+log/
+*.log
+
+# etc...
