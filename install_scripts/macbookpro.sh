@@ -19,7 +19,13 @@ xargs brew install < brew.install
 #trash fonts
 
 # when installing iterm2:
-# on iterm2, go to profile, settings, colors, put solarized dark, change background to black, and set font as 'Meslo LG S Regular for Powerline'
+# on iterm2, go to profile, settings, colors, put solarized dark, change background to black, and Profile>Text set font as 'Meslo LG S Regular for Powerline'
 # or copy settings file from computer to computer into Library/Application Support/iTerm2/DynamicProfiles
+
+# on iterm2 change keymapping to Natural Text Editing:
+  # Go to iTerm2 (in the menu bar) > Settings... > Profiles > Keys (not Preferences... > Keys)
+  # On current versions (3.14+) you then switch to the Key Mappings tab
+  # Press Presets... dropdown button.
+  # Select Natural Text Editing
 
 # disable CAPSLOCK key, switch it to esc
