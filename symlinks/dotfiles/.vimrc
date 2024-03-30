@@ -112,7 +112,11 @@ if has("autocmd")
 	" Enable file type detection
 	filetype on
 	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+  augroup jsonFiles
+    autocmd!
+    autocmd BufNewFile,BufRead *.json setfiletype json
+  augroup END
+
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
