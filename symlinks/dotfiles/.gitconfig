@@ -1,4 +1,3 @@
-# before using this file modify name and email under [user]
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -20,7 +19,14 @@
    excludesfile = ~/.gitignore_global
    editor = vim
    autocrlf = input
+   pager = delta
 [commit]
    template = ~/.gitmessage.txt
 [push]
 	default = current
+  autoSetupRemote = true
+[init]
+  defaultBranch = main
+[delta]
+  side-by-side = true
+  minus-style = white bold ul "#bd0000"
